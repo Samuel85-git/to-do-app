@@ -34,16 +34,21 @@ body {
     .add-button {
       width: calc(100% - 22px);
       padding: 10px;
-      background-color: #28a745;
+      background-color: #0060ff;
       color: #fff;
       border: none;
       border-radius: 4px;
       font-size: 16px;
       cursor: pointer;
+      transition: transform 0.2s ease-in-out;
     }
 
     .add-button:hover {
       background-color: #218838;
+    }
+
+    .add-button:active {
+      transform: scale(0.95);
     }
 
     .task-list {
@@ -66,45 +71,22 @@ body {
       margin-left: 5px;
     }
 
-    .favorite-button {
-      background-color: #007bff;
+    .favorite-button, .edit-button, .remove-button {
+      background-color: #3f7e9d;
       color: #fff;
       border: none;
       border-radius: 4px;
       padding: 5px 10px;
       cursor: pointer;
-      margin-right: 10px;
+      transition: transform 0.2s ease-in-out;
     }
 
-    .favorite-button:hover {
-      background-color: #0056b3;
+    .favorite-button:hover, .edit-button:hover, .remove-button:hover {
+      background-color: #48ff00;
     }
 
-    .edit-button {
-      background-color: #ffc107;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      padding: 5px 10px;
-      cursor: pointer;
-      margin-right: 10px;
-    }
-
-    .edit-button:hover {
-      background-color: #e0a800;
-    }
-
-    .remove-button {
-      background-color: #dc3545;
-      color: #fff;
-      border: none;
-      border-radius: 4px;
-      padding: 5px 10px;
-      cursor: pointer;
-    }
-
-    .remove-button:hover {
-      background-color: #c82333;
+    .favorite-button:active, .edit-button:active, .remove-button:active {
+      transform: scale(0.95);
     }
 
     .language-toggle {
@@ -117,8 +99,13 @@ body {
       border-radius: 4px;
       font-size: 16px;
       cursor: pointer;
+      transition: transform 0.2s ease-in-out;
     }
 
     .language-toggle:hover {
       background-color: #5a6268;
+    }
+
+    .language-toggle:active {
+      transform: scale(0.95);
     }
